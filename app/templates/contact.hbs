@@ -1,0 +1,12 @@
+<h2>DETAILS CONTACT</h2>
+{{outlet}}
+FirstName : {{model.firstname}}<br>
+LastName : {{model.lastname}}<br>
+Email : {{model.email}}<br>
+Address : {{model.address}}<br>
+City : {{model.city}}<br>
+Postal : {{model.postal}}
+{{#g-map markersFitMode='live' as |context|}}
+    {{g-map-address-marker context address=model.city}}
+{{/g-map}}
+{{#link-to 'contacts.edit' model.id}}edit{{/link-to}}

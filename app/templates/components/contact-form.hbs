@@ -1,0 +1,15 @@
+<form>
+    <label for="firstname">Firstname :</label>
+    {{input name="firstname" value=contact.firstname id="firstname"}}<br>
+    <label for="lastname">Lastname :</label>
+    {{input name="lastname" value=contact.lastname id="lastname"}}<br>
+    <label for="email">Email :</label>
+    {{input name="email" value=contact.email id="email"}}<br>
+    <label for="address">Address :</label>
+    {{input name="address" value=contact.address id="address"}}<br>
+    <label for="city">City :</label>
+    {{input name="city" value=contact.city id="city"}}<br>
+    <label for="postal">Postal :</label>
+    {{input name="postal" value=contact.postal id="postal"}}<br>
+    <input type="submit" value="Save" {{action "saveContact"}}>
+</form>
